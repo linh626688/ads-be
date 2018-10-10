@@ -13,11 +13,8 @@ import org.springframework.data.mongodb.core.convert.MappingMongoConverter;
 import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 
 @SpringBootApplication
-public class SpringBootMongoDbApplication extends SpringBootServletInitializer {
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(SpringBootMongoDbApplication.class);
-    }
+public class SpringBootMongoDbApplication {
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBootMongoDbApplication.class, args);
     }
